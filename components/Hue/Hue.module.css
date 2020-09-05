@@ -1,0 +1,23 @@
+.swatches {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.swatch {
+  height: 30px;
+  width: 22%;
+  border-radius: 4px;
+  background-color: #eaeaea;
+  box-sizing: border-box;
+}
+
+.active {
+  border: solid 2px #0088EA;
+}
+
+/* @TODO: Convert hex to RGBA */
+.cyan { background-color: #00FFFF; }
+.magenta { background-color: #FF00FF; }
+.yellow { background-color: #FFFF00; }
+.black { background-color: #000000; }

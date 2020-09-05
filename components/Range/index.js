@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 
 import styles from './Range.module.css'
 
+
+/**
+ * @TODO: Set theme purple as css variables
+ */
 const Range = () => {
   const [val, setVal] = useState(50)
 
