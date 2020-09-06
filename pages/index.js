@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Canvas from '../components/Canvas';
-import Controls from '../components/Controls';
+import Canvas from '../components/common/Canvas';
+import Controls from '../components/common/Controls';
 
 const Home = () => {
 
