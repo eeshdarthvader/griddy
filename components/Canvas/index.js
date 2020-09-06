@@ -1,9 +1,11 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
 import styles from './Canvas.module.css';
 
-const Canvas = () => {
+const Canvas = ({ constraints }) => {
     return (
-        <div className={styles.canvas}>
+        <motion.div className={styles.canvas} ref={constraints}>
             <svg width="100%" height="100%">
                 <defs>
                     {/* 4 dots grid */}
@@ -72,7 +74,7 @@ const Canvas = () => {
 
                 <rect id="rect" width="100vw" height="100vh" fill="url(#four)" />
             </svg>
-        </div>
+        </motion.div>
     );
 };
 

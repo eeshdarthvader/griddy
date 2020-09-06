@@ -1,13 +1,20 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
 import styles from './Controls.module.css';
 
-import Label from '../Label';
-import Range from '../Range';
-import Hue from '../Hue';
+import Label from './Label';
+import Range from './Range';
+import Hue from './Hue';
 
-const Controls = () => {
+const Controls = ({ constraints }) => {
     return (
-        <section className={styles.control}>
+        <motion.section
+            drag
+            dragConstraints={constraints}
+            dragElastic={0}
+            className={styles.control}
+        >
             <div className={styles.knob}>
                 <Label>Choose spacing</Label>
                 <Range />
@@ -22,7 +29,7 @@ const Controls = () => {
                 <Label>Choose opacity</Label>
                 <Range />
             </div>
-        </section>
+        </motion.section>
     );
 };
 

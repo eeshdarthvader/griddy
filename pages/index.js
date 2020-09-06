@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
-import Canvas from '../components/common/Canvas';
-import Controls from '../components/common/Controls';
+import Canvas from '../components/Canvas';
+import Controls from '../components/Controls';
+
 
 const Home = () => {
+    const constraintsRef = useRef(null);
 
     return (
         <>
-            <Controls />
-            <Canvas />
+            <Canvas constraints={constraintsRef} />
+            <Controls constraints={constraintsRef} />
         </>
     );
 };

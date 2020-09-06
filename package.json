@@ -9,6 +9,7 @@
     "lint": "npx prettier components/**/*.js --write"
   },
   "dependencies": {
+    "framer-motion": "^2.6.6",
     "next": "9.4.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
