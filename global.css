@@ -1,0 +1,17 @@
+:root {
+  --purple: #574D93;
+  --gray: #8E87C0;
+
+  --neutral: var(--gray);
+  --accent: var(--purple);
+}
+
+body {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  position: relative;
+}
