@@ -1,0 +1,19 @@
+.handle {
+  height: 8px;
+  width: 40px;
+  top: -24px;
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-20px, 0, 0);
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  height: 1px;
+  background-color: var(--neutral);
+}
+
+.bottom {
+  margin-top: 7px;
+}

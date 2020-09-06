@@ -17,3 +17,7 @@
 .knob {
   margin-bottom: 40px;
 }
+
+.container {
+  position: relative;
+}
