@@ -9,7 +9,6 @@ import Hue from './Hue';
 import Handle from './Handle';
 
 const Controls = () => {
-
     return (
         <Draggable handle=".handler">
             <div className={styles.container}>
