@@ -11,8 +11,8 @@ const Controls = () => {
 
     return (
         <div className={styles.container}>
-            <Handle />
             <section className={styles.control}>
+            <Handle />
                 <div className={styles.knob}>
                     <Label>Choose spacing</Label>
                     <Range />

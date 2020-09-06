@@ -4,7 +4,7 @@ import styles from './Handle.module.css'
 
 const Handle = () => {
     return (
-        <div className={styles.handle}>
+        <div className={`handler ${styles.handle}`}>
             <span className={styles.line} />
             <span className={`${styles.line} ${styles.bottom}`} />
         </div>
