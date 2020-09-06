@@ -10,14 +10,15 @@
   border-radius: 4px;
   background-color: #eaeaea;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .active {
-  border: solid 2px #0088EA;
+  border: solid 2px var(--accent);
 }
 
 /* @TODO: Convert hex to RGBA */
-.cyan { background-color: #00FFFF; }
-.magenta { background-color: #FF00FF; }
-.yellow { background-color: #FFFF00; }
-.black { background-color: #000000; }
+.cyan { background-color: rgb(204, 255, 255); }
+.magenta { background-color: rgb(255, 204, 255); }
+.yellow { background-color: rgb(255, 255, 204); }
+.black { background-color: rgb(204, 204, 204); }

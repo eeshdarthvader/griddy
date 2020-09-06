@@ -7,9 +7,11 @@
   max-width: 400px;
   width: 100%;
 
-  background-color: slategray;
   border-radius: 8px;
   padding: 40px;
+  background: #fff;
+
+  box-shadow: 0 0 20px 4px #eaeaea;
 }
 
 .knob {

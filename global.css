@@ -1,3 +1,8 @@
+:root {
+  --purple: #574D93;
+  --accent: var(--purple);
+}
+
 body {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
     'Arial', sans-serif;
@@ -6,6 +11,4 @@ body {
   box-sizing: border-box;
   height: 100vh;
   position: relative;
-
-  background-color: #2d2d2d;
 }
