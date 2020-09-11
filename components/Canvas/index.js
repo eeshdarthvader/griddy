@@ -2,13 +2,18 @@ import React from 'react';
 
 import styles from './Canvas.module.css';
 
-const Canvas = () => (
+const Canvas = ({ spacing, opacity }) => (
   <div className={styles.canvas}>
     <svg width="100%" height="100%">
       <defs>
         {/* 4 dots grid */}
-        <pattern id="four" width="6mm" height="6mm" patternUnits="userSpaceOnUse">
-          <circle fill="#496180" r="0.5mm" />
+        <pattern
+          id="four"
+          width={`${spacing}mm`}
+          height={`${spacing}mm`}
+          patternUnits="userSpaceOnUse"
+        >
+          <circle fill="#496180" r="0.5mm" fillOpacity={`${opacity}%`} />
         </pattern>
 
         {/* 3 dots grid */}

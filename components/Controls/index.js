@@ -8,14 +8,16 @@ import Range from './Range';
 import Hue from './Hue';
 import Handle from './Handle';
 
-const Controls = () => (
+const Controls = ({
+  spacing, opacity, onSpacingChange, onOpacityChange,
+}) => (
   <Draggable handle=".handler">
     <div className={styles.container}>
       <section className={styles.control}>
         <Handle />
         <div className={styles.knob}>
           <Label>Choose spacing</Label>
-          <Range />
+          <Range val={spacing} onChange={onSpacingChange} />
         </div>
         <div className={styles.knob}>
           <Label>Choose Color</Label>
@@ -23,7 +25,7 @@ const Controls = () => (
         </div>
         <div>
           <Label>Choose opacity</Label>
-          <Range />
+          <Range val={opacity} onChange={onOpacityChange} />
         </div>
       </section>
     </div>
