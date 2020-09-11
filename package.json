@@ -7,9 +7,7 @@
         "build": "next build",
         "start": "next start",
         "eslint": "eslint .",
-        "eslint-fix": "eslint --fix .",
-        "prettier-format": "prettier --config .prettierrc '**/*.js' --write",
-        "lint": "eslint --cache --fix ."
+        "eslint-fix": "eslint --fix ."
     },
     "dependencies": {
         "babel-eslint": "^10.1.0",
@@ -26,11 +24,16 @@
         "eslint": "7.8.1",
         "eslint-plugin-import": "2.22.0",
         "husky": "4",
+        "lint-staged": "10.2.6",
         "prettier": "1.18.2"
     },
     "husky": {
         "hooks": {
-            "pre-commit": "yarn prettier-format && yarn lint"
+            "pre-commit": "lint-staged"
         }
+    },
+    "lint-staged": {
+        "*.js": "eslint --cache --fix",
+        "*.{js,jsx,css,md}": "prettier --write"
     }
 }
