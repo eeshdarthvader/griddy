@@ -1,0 +1,5 @@
+.canvas {
+    /* Hack: To remove the slight scroll on the homepage */
+    height: calc(100vh - 4px);
+    box-sizing: border-box;
+}

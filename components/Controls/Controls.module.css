@@ -1,0 +1,23 @@
+.control {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    box-sizing: border-box;
+    max-width: 400px;
+    width: 100%;
+
+    border-radius: 8px;
+    padding: 40px;
+    background: #fff;
+
+    box-shadow: 0 0 20px 4px #eaeaea;
+}
+
+.knob {
+    margin-bottom: 40px;
+}
+
+.container {
+    position: relative;
+}

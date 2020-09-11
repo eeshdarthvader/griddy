@@ -1,0 +1,30 @@
+.handle {
+    height: 8px;
+    width: 30px;
+    top: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-15px, 0, 0);
+    cursor: pointer;
+
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.handle:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.line {
+    display: block;
+    height: 1px;
+    background-color: var(--neutral);
+}
+
+.bottom {
+    margin-top: 7px;
+}
