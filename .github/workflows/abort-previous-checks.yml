@@ -1,0 +1,13 @@
+name: Abort previous run - PR checks
+
+on: pull_request
+
+jobs:
+  cleanup-run:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Abort previous action run (branch != master)
+        if: endsWith(github.ref, 'master') == false
+        uses: rokroskar/workflow-run-cleanup-action@v0.2.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

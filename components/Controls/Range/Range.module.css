@@ -1,12 +1,11 @@
 .container {
-  display: flex;
+    display: flex;
 }
 
 .count {
-  width: 40px;
-  text-align: right;
+    width: 40px;
+    text-align: right;
 }
-
 
 /*******************
  Normalizing cross browser range styles
@@ -14,30 +13,28 @@
 ******************/
 
 .range {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 100%; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
 }
 
 .range::-webkit-slider-thumb {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 .range:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
 }
 
 .range::-ms-track {
-  width: 100%;
-  cursor: pointer;
+    width: 100%;
+    cursor: pointer;
 
-  /* Hides the slider so custom styles can be added */
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
 }
-
-
 
 /*******************
  Range Handle
@@ -45,83 +42,80 @@
 
 /* Special styling for WebKit/Blink */
 .range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 2px solid var(--accent);
-  height: 24px;
-  width: 24px;
-  border-radius: 100%;
-  background: #ffffff;
-  cursor: pointer;
-  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    -webkit-appearance: none;
+    border: 2px solid var(--accent);
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
 }
 
 /* All the same stuff for Firefox */
 .range::-moz-range-thumb {
-  border: 2px solid var(--accent);
-  height: 24px;
-  width: 24px;
-  border-radius: 100%;
-  background: #ffffff;
-  cursor: pointer;
+    border: 2px solid var(--accent);
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    background: #ffffff;
+    cursor: pointer;
 }
 
 /* All the same stuff for IE */
 .range::-ms-thumb {
-  border: 2px solid var(--accent);
-  height: 24px;
-  width: 24px;
-  border-radius: 100%;
-  background: #ffffff;
-  cursor: pointer;
+    border: 2px solid var(--accent);
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    background: #ffffff;
+    cursor: pointer;
 }
-
-
 
 /*******************
  Range Track
 ******************/
 
-
 .range::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 3px;
-  cursor: pointer;
-  background: var(--accent);
-  border-radius: 1.3px;
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: var(--accent);
+    border-radius: 1.3px;
 }
 
 .range:focus::-webkit-slider-runnable-track {
-  background: #367ebd;
+    background: #367ebd;
 }
 
 .range::-moz-range-track {
-  width: 100%;
-  height: 3px;
-  cursor: pointer;
-  background: var(--accent);
-  border-radius: 1.3px;
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: var(--accent);
+    border-radius: 1.3px;
 }
 
 .range::-ms-track {
-  width: 100%;
-  height: 3px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent;
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
 }
 .range::-ms-fill-lower {
-  background: var(--accent);
-  border-radius: 2.6px;
+    background: var(--accent);
+    border-radius: 2.6px;
 }
 .range:focus::-ms-fill-lower {
-  background: var(--accent);
+    background: var(--accent);
 }
 .range::-ms-fill-upper {
-  background: var(--accent);
-  border-radius: 2.6px;
+    background: var(--accent);
+    border-radius: 2.6px;
 }
 .range:focus::-ms-fill-upper {
-  background: #367ebd;
+    background: #367ebd;
 }

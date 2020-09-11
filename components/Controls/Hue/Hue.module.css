@@ -1,24 +1,32 @@
 .swatches {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .swatch {
-  height: 30px;
-  width: 22%;
-  border-radius: 4px;
-  background-color: #eaeaea;
-  box-sizing: border-box;
-  cursor: pointer;
+    height: 30px;
+    width: 22%;
+    border-radius: 4px;
+    background-color: #eaeaea;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .active {
-  border: solid 2px var(--accent);
+    border: solid 2px var(--accent);
 }
 
 /* @TODO: Convert hex to RGBA */
-.cyan { background-color: rgb(204, 255, 255); }
-.magenta { background-color: rgb(255, 204, 255); }
-.yellow { background-color: rgb(255, 255, 204); }
-.black { background-color: rgb(204, 204, 204); }
+.cyan {
+    background-color: rgb(204, 255, 255);
+}
+.magenta {
+    background-color: rgb(255, 204, 255);
+}
+.yellow {
+    background-color: rgb(255, 255, 204);
+}
+.black {
+    background-color: rgb(204, 204, 204);
+}
