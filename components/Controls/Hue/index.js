@@ -1,13 +1,30 @@
 import React from 'react';
-
 import styles from './Hue.module.css';
 
-const Hue = () => (
+import { COLORS } from '../../utils';
+
+const Hue = ({ activeColor, onClick }) => (
   <div className={styles.swatches}>
-    <span className={`${styles.swatch} ${styles.cyan}`} />
-    <span className={`${styles.swatch} ${styles.magenta} ${styles.active}`} />
-    <span className={`${styles.swatch} ${styles.yellow}`} />
-    <span className={`${styles.swatch} ${styles.black}`} />
+    {Object.entries(COLORS).map((color) => {
+      if (activeColor === color[1]) {
+        return (
+          <span
+            key={color[1]}
+            data-color={color[1]}
+            onClick={onClick}
+            className={`${styles.swatch} ${styles[color[1]]} ${styles.active}`}
+          />
+        );
+      }
+      return (
+        <span
+          key={color[1]}
+          data-color={color[1]}
+          className={`${styles.swatch} ${styles[color[1]]}`}
+          onClick={onClick}
+        />
+      );
+    })}
   </div>
 );
 

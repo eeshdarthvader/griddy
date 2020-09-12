@@ -1,8 +1,16 @@
 import React from 'react';
+import colorString from 'color-string';
 
 import styles from './Canvas.module.css';
 
-const Canvas = ({ spacing, opacity }) => (
+const COLOR_HASH = {
+  cyan: [204, 255, 255],
+  magenta: [255, 204, 255],
+  yellow: [255, 255, 204],
+  black: [36, 34, 34],
+};
+
+const Canvas = ({ spacing, opacity, color }) => (
   <div className={styles.canvas}>
     <svg width="100%" height="100%">
       <defs>
@@ -13,7 +21,7 @@ const Canvas = ({ spacing, opacity }) => (
           height={`${spacing}mm`}
           patternUnits="userSpaceOnUse"
         >
-          <circle fill="#496180" r="0.5mm" fillOpacity={`${opacity}%`} />
+          <circle fill="rgba(0,0,0,1)" r="0.5mm" fillOpacity={`${opacity}%`} />
         </pattern>
 
         {/* 3 dots grid */}
@@ -24,7 +32,12 @@ const Canvas = ({ spacing, opacity }) => (
 
         {/* square grid */}
         <pattern id="square" width="24" height="24" patternUnits="userSpaceOnUse">
-          <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#496180" strokeWidth="0.6mm" />
+          <path
+            d="M 24 0 L 0 0 0 24"
+            fill="none"
+            stroke="#496180"
+            strokeWidth="0.6mm"
+          />
         </pattern>
 
         {/* ruled grid */}
@@ -35,10 +48,38 @@ const Canvas = ({ spacing, opacity }) => (
         {/* music grid */}
         <pattern id="music" width="100" height="100" patternUnits="userSpaceOnUse">
           <line x1="0" y1="0" x2="100" y2="0" stroke="#496180" strokeWidth="0.3mm" />
-          <line x1="0" y1="12" x2="100" y2="12" stroke="#496180" strokeWidth="0.3mm" />
-          <line x1="0" y1="24" x2="100" y2="24" stroke="#496180" strokeWidth="0.3mm" />
-          <line x1="0" y1="36" x2="100" y2="36" stroke="#496180" strokeWidth="0.3mm" />
-          <line x1="0" y1="48" x2="100" y2="48" stroke="#496180" strokeWidth="0.3mm" />
+          <line
+            x1="0"
+            y1="12"
+            x2="100"
+            y2="12"
+            stroke="#496180"
+            strokeWidth="0.3mm"
+          />
+          <line
+            x1="0"
+            y1="24"
+            x2="100"
+            y2="24"
+            stroke="#496180"
+            strokeWidth="0.3mm"
+          />
+          <line
+            x1="0"
+            y1="36"
+            x2="100"
+            y2="36"
+            stroke="#496180"
+            strokeWidth="0.3mm"
+          />
+          <line
+            x1="0"
+            y1="48"
+            x2="100"
+            y2="48"
+            stroke="#496180"
+            strokeWidth="0.3mm"
+          />
         </pattern>
       </defs>
 
