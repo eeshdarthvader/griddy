@@ -1,29 +1,29 @@
 import React from 'react';
 import Draggable from 'react-draggable';
-
 import styles from './Controls.module.css';
-
 import Label from './Label';
 import Range from './Range';
 import Hue from './Hue';
 import Handle from './Handle';
 
-const Controls = () => (
+const Controls = ({
+  spacing, opacity, color, onSpacingChange, onOpacityChange, onColorChange,
+}) => (
   <Draggable handle=".handler">
     <div className={styles.container}>
       <section className={styles.control}>
         <Handle />
         <div className={styles.knob}>
           <Label>Choose spacing</Label>
-          <Range />
+          <Range val={spacing} onChange={onSpacingChange} />
         </div>
         <div className={styles.knob}>
           <Label>Choose Color</Label>
-          <Hue />
+          <Hue activeColor={color} onClick={onColorChange} />
         </div>
         <div>
           <Label>Choose opacity</Label>
-          <Range />
+          <Range val={opacity} onChange={onOpacityChange} />
         </div>
       </section>
     </div>
