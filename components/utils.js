@@ -4,3 +4,12 @@ export const COLORS = Object.freeze({
   GREEN: 'rgba(35, 150, 6,1)',
   BLACK: 'rgba(0, 0, 0, 1)',
 });
+
+export const GRID_TYPES = Object.freeze({
+  RECTANGLES: 'rectangles',
+  LINES: 'lines',
+  SQUARES: 'sqaures',
+  MUSIC: 'music',
+});
+
+export const GRIDS_NAMES = [GRID_TYPES.RECTANGLES, GRID_TYPES.LINES];

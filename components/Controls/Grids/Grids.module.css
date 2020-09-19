@@ -1,0 +1,72 @@
+.gridTypesContainer {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.boxes {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    background: #f2f2f8;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.active {
+    border: solid 2px var(--neutral);
+}
+
+.ellipses1 {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 12px;
+    top: 5px;
+    background: #3f386b;
+}
+
+.ellipses2 {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 30px;
+    top: 5px;
+    background: #3f386b;
+}
+
+.ellipses3 {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 12px;
+    top: 18px;
+    background: #3f386b;
+}
+
+.ellipses4 {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 30px;
+    top: 18px;
+    background: #3f386b;
+}
+
+.line1 {
+    position: absolute;
+    width: 18px;
+    height: 0px;
+    left: 13px;
+    top: 8px;
+    border: 2px solid #3f386b;
+}
+
+.line2 {
+    position: absolute;
+    width: 18px;
+    height: 0px;
+    left: 13px;
+    top: 18px;
+    border: 2px solid #3f386b;
+}

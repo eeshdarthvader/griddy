@@ -5,14 +5,26 @@ import Label from './Label';
 import Range from './Range';
 import Hue from './Hue';
 import Handle from './Handle';
+import Grids from './Grids';
 
 const Controls = ({
-  spacing, opacity, color, onSpacingChange, onOpacityChange, onColorChange,
+  spacing,
+  opacity,
+  color,
+  gridType,
+  onSpacingChange,
+  onOpacityChange,
+  onColorChange,
+  onGridTypeChange,
 }) => (
   <Draggable handle=".handler">
     <div className={styles.container}>
       <section className={styles.control}>
         <Handle />
+        <div className={styles.knob}>
+          <Label>Choose grid</Label>
+          <Grids activeGridType={gridType} onClick={onGridTypeChange} />
+        </div>
         <div className={styles.knob}>
           <Label>Choose spacing</Label>
           <Range

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Hue.module.css';
-
 import { COLORS } from '../../utils';
 
 const Hue = ({ activeColor, onClick }) => (
