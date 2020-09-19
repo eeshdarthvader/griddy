@@ -1,14 +1,5 @@
 import React from 'react';
-import colorString from 'color-string';
-
 import styles from './Canvas.module.css';
-
-const COLOR_HASH = {
-  cyan: [204, 255, 255],
-  magenta: [255, 204, 255],
-  yellow: [255, 255, 204],
-  black: [36, 34, 34],
-};
 
 const Canvas = ({ spacing, opacity, color }) => (
   <div className={styles.canvas}>
@@ -21,7 +12,7 @@ const Canvas = ({ spacing, opacity, color }) => (
           height={`${spacing}mm`}
           patternUnits="userSpaceOnUse"
         >
-          <circle fill="rgba(0,0,0,1)" r="0.5mm" fillOpacity={`${opacity}%`} />
+          <circle fill={color} r="0.5mm" fillOpacity={`${opacity}%`} />
         </pattern>
 
         {/* 3 dots grid */}
