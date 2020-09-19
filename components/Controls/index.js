@@ -15,7 +15,14 @@ const Controls = ({
         <Handle />
         <div className={styles.knob}>
           <Label>Choose spacing</Label>
-          <Range val={spacing} onChange={onSpacingChange} />
+          <Range
+            val={spacing}
+            min="2"
+            max="10"
+            displayUnit="mm"
+            step={0.1}
+            onChange={onSpacingChange}
+          />
         </div>
         <div className={styles.knob}>
           <Label>Choose Color</Label>
@@ -23,7 +30,13 @@ const Controls = ({
         </div>
         <div>
           <Label>Choose opacity</Label>
-          <Range val={opacity} onChange={onOpacityChange} />
+          <Range
+            val={opacity}
+            min="20"
+            max="100"
+            displayUnit="%"
+            onChange={onOpacityChange}
+          />
         </div>
       </section>
     </div>

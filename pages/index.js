@@ -5,8 +5,8 @@ import Controls from '../components/Controls';
 import { COLORS } from '../components/utils';
 
 const Home = () => {
-  const [spacing, setSpacing] = useState(50);
-  const [opacity, setOpacity] = useState(50);
+  const [spacing, setSpacing] = useState(5);
+  const [opacity, setOpacity] = useState(100);
   const [color, setColor] = useState(COLORS.BLACK);
 
   const handleSpacingChange = (e) => setSpacing(e.target.value);
@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <>
-      <Canvas spacing={spacing / 10} opacity={opacity} color={color} />
+      <Canvas spacing={spacing} opacity={opacity} color={color} />
       <Controls
         spacing={spacing}
         opacity={opacity}
