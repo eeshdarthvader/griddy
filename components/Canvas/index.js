@@ -62,6 +62,7 @@ const renderGridType = (spacing, opacity, color, gridType) => {
                 fill="none"
                 stroke={color}
                 strokeWidth="0.3mm"
+                opacity={`${opacity}%`}
               />
             </pattern>
           </defs>
