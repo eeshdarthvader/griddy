@@ -51,12 +51,17 @@ const renderGridType = (spacing, opacity, color, gridType) => {
         <svg width="100%" height="100%">
           <defs>
             {/* square grid */}
-            <pattern id="square" width="24" height="24" patternUnits="userSpaceOnUse">
+            <pattern
+              id="square"
+              width={`${spacing}mm`}
+              height={`${spacing}mm`}
+              patternUnits="userSpaceOnUse"
+            >
               <path
-                d="M 24 0 L 0 0 0 24"
+                d={`M ${spacing * 10} 0 L 0 0 0 ${spacing * 10}`}
                 fill="none"
-                stroke="#496180"
-                strokeWidth="0.6mm"
+                stroke={color}
+                strokeWidth="0.3mm"
               />
             </pattern>
           </defs>

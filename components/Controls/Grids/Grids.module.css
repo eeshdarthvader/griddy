@@ -70,3 +70,39 @@
     top: 18px;
     border: 2px solid #3f386b;
 }
+
+.verticalLine1 {
+    position: absolute;
+    width: 0px;
+    height: 26px;
+    left: 15px;
+    top: 0px;
+    border: 2px solid #3f386b;
+}
+
+.verticalLine2 {
+    position: absolute;
+    width: 0px;
+    height: 26px;
+    left: 32px;
+    top: 0px;
+    border: 2px solid #3f386b;
+}
+
+.horizontalLine3 {
+    position: absolute;
+    width: 47px;
+    height: 0px;
+    left: 0px;
+    top: 8px;
+    border: 2px solid #3f386b;
+}
+
+.horizontalLine4 {
+    position: absolute;
+    width: 47px;
+    height: 0px;
+    left: 0px;
+    top: 18px;
+    border: 2px solid #3f386b;
+}

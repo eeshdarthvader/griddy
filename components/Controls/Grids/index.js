@@ -42,6 +42,22 @@ const Grids = ({ activeGridType, onClick }) => {
                 <span className={styles.line2} />
               </span>
             );
+          case GRID_TYPES.SQUARES:
+            return (
+              <span
+                className={`${styles.boxes} ${
+                  activeGridType === name ? styles.active : ''
+                }`}
+                data-grid={name}
+                key={name}
+                onClick={() => handleClick(name)}
+              >
+                <span className={styles.verticalLine1} />
+                <span className={styles.verticalLine2} />
+                <span className={styles.horizontalLine3} />
+                <span className={styles.horizontalLine4} />
+              </span>
+            );
           default:
             return null;
         }

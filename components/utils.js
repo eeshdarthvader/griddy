@@ -12,4 +12,4 @@ export const GRID_TYPES = Object.freeze({
   MUSIC: 'music',
 });
 
-export const GRIDS_NAMES = [GRID_TYPES.RECTANGLES, GRID_TYPES.LINES];
+export const GRIDS_NAMES = [GRID_TYPES.RECTANGLES, GRID_TYPES.LINES, GRID_TYPES.SQUARES];
