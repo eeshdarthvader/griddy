@@ -39,7 +39,7 @@ const renderGridType = (spacing, opacity, color, gridType) => {
                 y2="0"
                 stroke={color}
                 strokeWidth="0.3mm"
-                fillOpacity={`${opacity}%`}
+                opacity={`${opacity}%`}
               />
             </pattern>
           </defs>
@@ -155,6 +155,8 @@ const renderGridType = (spacing, opacity, color, gridType) => {
 
 const Canvas = ({
   spacing, opacity, color, gridType,
-}) => <div className={styles.canvas}>{renderGridType(spacing, opacity, color, gridType)}</div>;
+}) => (
+  <div className={styles.canvas}>{renderGridType(spacing, opacity, color, gridType)}</div>
+);
 
 export default Canvas;
